@@ -1,0 +1,24 @@
+{
+  "name": "lang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "adposition.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cawilson1/lang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "none. get ya own",
+  "bugs": {
+    "url": "https://github.com/cawilson1/lang/issues"
+  },
+  "homepage": "https://github.com/cawilson1/lang#readme",
+  "type": "module",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  }
+}
