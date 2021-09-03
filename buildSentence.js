@@ -1,5 +1,5 @@
 //prepositional phrase acts like an adverb
-import { map, slice, ifElse } from "ramda";
+import { map, slice, ifElse, compose } from "ramda";
 import randomAdpostion from "./buildAdpositionalPhrase.js";
 import { randInt, arange, tOrF, f, getRandomFrom } from "./helpers.js";
 import adverbs from "./lists/adverbs.js";
@@ -22,7 +22,6 @@ const adpositionalOrAdverb = ifElse(
   randomAdpostion,
   f(getRandomFrom)(adverbs)
 );
-
-const adposPhrases = map(adpositionalOrAdverb, arange(randInt(7)));
+const adposPhrases = compose(map(adpositionalOrAdverb), arange, randInt)(7);
 const result = buildSentence(["this is the root", ...adposPhrases], "");
 console.log(result);
