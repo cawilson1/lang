@@ -1,6 +1,6 @@
 import { includes } from "ramda";
 import prepositions from "./lists/prepositions.js";
-import nouns from "./longLists/longNounList.js";
+import nouns from "./longLists/longNounList2.js";
 import articles from "./lists/articles.js";
 import { getRandomFrom } from "./helpers.js";
 
